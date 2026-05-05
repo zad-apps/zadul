@@ -1,7 +1,7 @@
 {
   "name": "Zadul",
   "short_name": "Zadul",
-  "description": "Kitab Zadul Muslim",
+  "description": "زاد المتعلمين",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
