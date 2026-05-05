@@ -153,19 +153,6 @@
 </div>
 
 <script>
-  const PASSWORD = 'jagal4n';
-
-(function() {
-  const saved = sessionStorage.getItem('zadul-auth');
-  if (saved !== PASSWORD) {
-    const input = prompt('Masukkan password:');
-    if (input !== PASSWORD) {
-      document.body.innerHTML = '<div style="text-align:center;padding:40px;font-family:Sora,sans-serif;">Akses ditolak.</div>';
-      return;
-    }
-    sessionStorage.setItem('zadul-auth', PASSWORD);
-  }
-})();
   let allData = { judul: [], bab: [] };
 
   window.onload = function() {
