@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Zadul</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="images/icon-192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { height: 100%; }
+    body { font-family: 'Sora', sans-serif; background: #ffffff; color: #11343d; font-size: 16px; }
+
+    #search-bar {
+      position: sticky; top: 0; z-index: 100;
+      background: #ffffff; padding: 14px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    #search-wrapper { position: relative; width: 100%; }
+    #search-bar input {
+      width: 100%; padding: 14px 48px 14px 20px;
+      border-radius: 20px; border: 3px solid #3CB463;
+      font-family: 'Sora', sans-serif;
+      font-size: 15px; outline: none;
+      background: #ffffff; color: #11343d;
+    }
+    #clear-btn {
+      position: absolute; right: 14px; top: 50%;
+      transform: translateY(-50%);
+      background: none; border: none;
+      font-size: 18px; cursor: pointer;
+      color: #11343d; opacity: 0.4;
+      display: none; padding: 4px;
+    }
+
+    #content { padding: 16px; }
+
+    #bab-page { display: block; }
+    #bab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .bab-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .bab-card:active { transform: scale(0.96); }
+    .bab-card img { width: 100%; height: auto; display: block; }
+
+    #judul-page { display: none; }
+
+    .judul-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      min-height: 64px;
+      transition: background 0.15s;
+    }
+    .judul-card:active { background: #e8f0f1; }
+    .judul-number {
+      font-size: 13px; font-weight: 600; opacity: 0.4;
+      min-width: 24px; text-align: center;
+      flex-shrink: 0; padding-top: 2px;
+    }
+    .judul-divider {
+      opacity: 0.2; font-size: 20px;
+      flex-shrink: 0; line-height: 1.3;
+    }
+    .judul-text {
+      font-size: 15px; font-weight: 700;
+      line-height: 1.5; flex: 1; text-align: left;
+    }
+
+    #search-results { display: none; }
+    .search-label {
+      font-size: 12px; opacity: 0.4; margin-bottom: 12px;
+      font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+    }
+
+    #overlay {
+      display: none; position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.92);
+      z-index: 200; overflow-y: auto;
+      padding: 70px 16px 20px;
+    }
+    #overlay-close {
+      position: fixed; top: 16px; right: 16px;
+      background: white; border: none; border-radius: 50%;
+      width: 44px; height: 44px; font-size: 20px;
+      cursor: pointer; font-weight: 700; color: #11343d;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      display: flex; align-items: center; justify-content: center;
+    }
+    #overlay-images img {
+      width: 100%; border-radius: 10px;
+      margin-bottom: 12px; display: block;
+    }
+    .loading {
+      color: white; text-align: center;
+      padding: 60px 20px; font-size: 15px; opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<div id="search-bar">
+  <div id="search-wrapper">
+    <input type="text" id="search-input" placeholder="Cari judul..." oninput="onSearch()">
+    <button id="clear-btn" onclick="clearSearch()">✕</button>
+  </div>
+</div>
+
+<div id="content">
+  <div id="search-results">
+    <div class="search-label">Hasil Pencarian</div>
+    <div id="search-list"></div>
+  </div>
+
+  <div id="bab-page">
+    <div id="bab-grid"></div>
+  </div>
+
+  <div id="judul-page">
+    <div id="judul-list"></div>
+  </div>
+</div>
+
+<div id="overlay">
+  <button id="overlay-close" onclick="closeOverlay()">✕</button>
+  <div id="overlay-images"></div>
+</div>
+
+<script>
+  let allData = { judul: [], bab: [] };
+
+  window.onload = function() {
+    fetch('data.json')
+      .then(r => r.json())
+      .then(data => {
+        allData = data;
+        renderBab();
+      });
+
+    window.addEventListener('popstate', function(e) {
+      if (document.getElementById('overlay').style.display === 'block') {
+        closeOverlay();
+      } else if (document.getElementById('judul-page').style.display === 'block') {
+        backToBab();
+      }
+    });
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  };
+
+  function renderBab() {
+    const grid = document.getElementById('bab-grid');
+    grid.innerHTML = '';
+    allData.bab.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'bab-card';
+      card.innerHTML = `<img src="${item.gambar}" alt="${item.bab}">`;
+      card.onclick = () => openBab(item.bab);
+      grid.appendChild(card);
+    });
+  }
+
+  function openBab(babName) {
+    history.pushState({ page: 'judul', bab: babName }, '');
+    document.getElementById('bab-page').style.display = 'none';
+    document.getElementById('judul-page').style.display = 'block';
+    document.getElementById('search-input').value = '';
+    document.getElementById('clear-btn').style.display = 'none';
+
+    const list = document.getElementById('judul-list');
+    list.innerHTML = '';
+    const filtered = allData.judul.filter(j => j.bab === babName);
+    filtered.forEach((item, index) => {
+      const card = document.createElement('div');
+      card.className = 'judul-card';
+      card.innerHTML = `
+        <span class="judul-number">${index + 1}</span>
+        <span class="judul-divider">|</span>
+        <span class="judul-text">${item.judul}</span>
+      `;
+      card.onclick = () => openJudul(item.halamanAwal, item.halamanAkhir);
+      list.appendChild(card);
+    });
+  }
+
+  function backToBab() {
+    document.getElementById('judul-page').style.display = 'none';
+    document.getElementById('bab-page').style.display = 'block';
+  }
+
+  function onSearch() {
+    const q = document.getElementById('search-input').value.toLowerCase();
+    document.getElementById('clear-btn').style.display = q.length > 0 ? 'block' : 'none';
+
+    const babPage = document.getElementById('bab-page');
+    const judulPage = document.getElementById('judul-page');
+    const searchResults = document.getElementById('search-results');
+    const searchList = document.getElementById('search-list');
+
+    if (q.length === 0) {
+      searchResults.style.display = 'none';
+      babPage.style.display = 'block';
+      judulPage.style.display = 'none';
+      return;
+    }
+
+    babPage.style.display = 'none';
+    judulPage.style.display = 'none';
+    searchResults.style.display = 'block';
+    searchList.innerHTML = '';
+
+    const results = allData.judul.filter(item => item.judul.toLowerCase().includes(q));
+    if (results.length === 0) {
+      searchList.innerHTML = '<div style="opacity:0.4;font-size:15px;padding:20px 0;">Tidak ditemukan</div>';
+      return;
+    }
+    results.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'judul-card';
+      card.innerHTML = `<span class="judul-text">${item.judul}</span>`;
+      card.onclick = () => openJudul(item.halamanAwal, item.halamanAkhir);
+      searchList.appendChild(card);
+    });
+  }
+
+  function clearSearch() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('clear-btn').style.display = 'none';
+    document.getElementById('search-results').style.display = 'none';
+    document.getElementById('bab-page').style.display = 'block';
+    document.getElementById('judul-page').style.display = 'none';
+  }
+
+  function openJudul(awal, akhir) {
+    history.pushState({ page: 'overlay' }, '');
+    const overlay = document.getElementById('overlay');
+    const container = document.getElementById('overlay-images');
+    container.innerHTML = '<div class="loading">Memuat halaman...</div>';
+    overlay.style.display = 'block';
+    overlay.scrollTop = 0;
+
+    container.innerHTML = '';
+    for (let i = awal; i <= akhir; i++) {
+      const img = document.createElement('img');
+      img.src = `images/${i}.jpg`;
+      container.appendChild(img);
+    }
+  }
+
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('overlay-images').innerHTML = '';
+  }
+</script>
+</body>
+</html>

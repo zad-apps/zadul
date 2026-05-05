@@ -1,0 +1,608 @@
+{
+  "judul": [
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Tawassul Romo Yai Sebelum Membaca Kitab",
+      "halamanAwal": 2,
+      "halamanAkhir": 5
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Mbah Yai Sesudah Ngaos",
+      "halamanAwal": 6,
+      "halamanAkhir": 7
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Mbah Yai Sesudah Mauidloh",
+      "halamanAwal": 8,
+      "halamanAkhir": 11
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a KH. Ma’ruf Irsyad",
+      "halamanAwal": 11,
+      "halamanAkhir": 17
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Akhir Tahun",
+      "halamanAwal": 18,
+      "halamanAkhir": 19
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Awal Tahun",
+      "halamanAwal": 19,
+      "halamanAkhir": 20
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan Bulan Muharrom",
+      "halamanAwal": 21,
+      "halamanAkhir": 21
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Asyuro",
+      "halamanAwal": 21,
+      "halamanAkhir": 23
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan Rabu Wekasan",
+      "halamanAwal": 23,
+      "halamanAkhir": 27
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan Bulan Rajab",
+      "halamanAwal": 28,
+      "halamanAkhir": 28
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Bulan Rajab",
+      "halamanAwal": 29,
+      "halamanAkhir": 29
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan Nishfu Sya’ban",
+      "halamanAwal": 30,
+      "halamanAkhir": 30
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Nishfu Sya’ban",
+      "halamanAwal": 30,
+      "halamanAkhir": 33
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Bulan Ramadlan",
+      "halamanAwal": 33,
+      "halamanAkhir": 33
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Tarawih",
+      "halamanAwal": 34,
+      "halamanAkhir": 38
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Witir",
+      "halamanAwal": 38,
+      "halamanAkhir": 38
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan – Amalan",
+      "halamanAwal": 39,
+      "halamanAkhir": 40
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Obat Segala Penyakit",
+      "halamanAwal": 40,
+      "halamanAkhir": 40
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Dibaca Ketika Ada Hajat Besar",
+      "halamanAwal": 41,
+      "halamanAkhir": 41
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Amalan Agar meninggal Husnul Khotimah",
+      "halamanAwal": 42,
+      "halamanAkhir": 46
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Sayyidul Istighfar",
+      "halamanAwal": 47,
+      "halamanAkhir": 47
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a sebelum Belajar",
+      "halamanAwal": 47,
+      "halamanAkhir": 48
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Sesudah Belajar",
+      "halamanAwal": 48,
+      "halamanAkhir": 48
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Sebelum Tadarus",
+      "halamanAwal": 49,
+      "halamanAkhir": 49
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Luas Rizqi",
+      "halamanAwal": 50,
+      "halamanAkhir": 50
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Pertama Kali Buka Usaha",
+      "halamanAwal": 50,
+      "halamanAkhir": 50
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Demam Panggung",
+      "halamanAwal": 51,
+      "halamanAkhir": 51
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Ketika Mendengar Adzan",
+      "halamanAwal": 51,
+      "halamanAkhir": 51
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Terhindar Dari Penyakit Mata",
+      "halamanAwal": 51,
+      "halamanAkhir": 51
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Bepergian",
+      "halamanAwal": 52,
+      "halamanAkhir": 52
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Mendo’akan orang Sakit",
+      "halamanAwal": 52,
+      "halamanAkhir": 52
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Nabi Khidlir AS",
+      "halamanAwal": 53,
+      "halamanAkhir": 55
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Cela’an",
+      "halamanAwal": 55,
+      "halamanAkhir": 55
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Selametan Umum",
+      "halamanAwal": 56,
+      "halamanAkhir": 57
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Selametan Mendirikan Rumah",
+      "halamanAwal": 57,
+      "halamanAkhir": 59
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Selametan Khatam Al-Qur’an",
+      "halamanAwal": 59,
+      "halamanAkhir": 61
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Walimatul Wadlimah",
+      "halamanAwal": 61,
+      "halamanAkhir": 62
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Istighotsah",
+      "halamanAwal": 63,
+      "halamanAkhir": 67
+    },
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "judul": "Do’a Rosul",
+      "halamanAwal": 68,
+      "halamanAkhir": 76
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Salam Kepada Auliya’",
+      "halamanAwal": 78,
+      "halamanAkhir": 80
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Al Maudlu’at Fi Maqbaroh Mbah Irsyad",
+      "halamanAwal": 80,
+      "halamanAkhir": 80
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Tahlil Khosh KH. Ma’ruf Irsyad",
+      "halamanAwal": 81,
+      "halamanAkhir": 83
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Tahlil",
+      "halamanAwal": 84,
+      "halamanAkhir": 88
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Do’a Tahlil",
+      "halamanAwal": 89,
+      "halamanAkhir": 93
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "judul": "Do’a Tawassul di Maqbaroh Auliya’",
+      "halamanAwal": 93,
+      "halamanAkhir": 94
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Al Aurod Ba’da Sholat",
+      "halamanAwal": 96,
+      "halamanAkhir": 99
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Do’a Bakdal Maktubah",
+      "halamanAwal": 100,
+      "halamanAkhir": 103
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Bacaan Setelah Sholat Fardlu",
+      "halamanAwal": 104,
+      "halamanAkhir": 104
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Bacaan Setelah Sholat Maghrib dan Subuh",
+      "halamanAwal": 104,
+      "halamanAkhir": 104
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Qobliyah Subuh",
+      "halamanAwal": 105,
+      "halamanAkhir": 105
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Sholat Tahajud",
+      "halamanAwal": 106,
+      "halamanAkhir": 107
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Do’a Sholat Tahajud",
+      "halamanAwal": 108,
+      "halamanAkhir": 109
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Sholat Hajat",
+      "halamanAwal": 110,
+      "halamanAkhir": 110
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Do’a Sholat Hajat",
+      "halamanAwal": 112,
+      "halamanAkhir": 112
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Wirid Setelah Sholat Jum’at",
+      "halamanAwal": 112,
+      "halamanAkhir": 112
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Do’a Sholat Dluha",
+      "halamanAwal": 113,
+      "halamanAkhir": 113
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Kaifiyyah Sholat Mujahadah",
+      "halamanAwal": 115,
+      "halamanAkhir": 117
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "judul": "Niat Sholat Jama’ Qoshor",
+      "halamanAwal": 118,
+      "halamanAkhir": 120
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Khutbah Nikah",
+      "halamanAwal": 122,
+      "halamanAkhir": 124
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Khutbah Nikah",
+      "halamanAwal": 125,
+      "halamanAkhir": 129
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Ijab Qobul Aqdun Nikah",
+      "halamanAwal": 130,
+      "halamanAkhir": 131
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Walimah Sebelum Akad Nikah",
+      "halamanAwal": 132,
+      "halamanAkhir": 133
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Walimah Setelah Akad Nikah",
+      "halamanAwal": 133,
+      "halamanAkhir": 135
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Temu Manten",
+      "halamanAwal": 136,
+      "halamanAkhir": 136
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Berhubungan Badan",
+      "halamanAwal": 136,
+      "halamanAkhir": 136
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Hamil",
+      "halamanAwal": 137,
+      "halamanAkhir": 138
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Nglarani",
+      "halamanAwal": 139,
+      "halamanAkhir": 139
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Mapati / Mitoni",
+      "halamanAwal": 139,
+      "halamanAkhir": 140
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Selametan Lahirnya Anak",
+      "halamanAwal": 141,
+      "halamanAkhir": 142
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Nyembelih Aqiqoh",
+      "halamanAwal": 142,
+      "halamanAkhir": 142
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Nyembelih Qurban",
+      "halamanAwal": 143,
+      "halamanAkhir": 143
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Walimatut tasmiah",
+      "halamanAwal": 143,
+      "halamanAkhir": 145
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "judul": "Do’a Walimatul Khitan",
+      "halamanAwal": 145,
+      "halamanAkhir": 146
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Shoalawat Alun Nabi",
+      "halamanAwal": 148,
+      "halamanAkhir": 150
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Mahallul Qiyam",
+      "halamanAwal": 151,
+      "halamanAkhir": 153
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Asnawiyah",
+      "halamanAwal": 153,
+      "halamanAkhir": 154
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Asyghil",
+      "halamanAwal": 154,
+      "halamanAkhir": 154
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Malam Jum’at",
+      "halamanAwal": 155,
+      "halamanAkhir": 155
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Fatih",
+      "halamanAwal": 156,
+      "halamanAkhir": 156
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Thibbil Qulub",
+      "halamanAwal": 156,
+      "halamanAkhir": 157
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Nariyah",
+      "halamanAwal": 157,
+      "halamanAkhir": 158
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Munjiyat",
+      "halamanAwal": 158,
+      "halamanAkhir": 158
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Hajji",
+      "halamanAwal": 159,
+      "halamanAkhir": 159
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Hari Jum’ah",
+      "halamanAwal": 159,
+      "halamanAkhir": 160
+    },
+    {
+      "bab": "SHOLAWAT",
+      "judul": "Sholawat Ruh",
+      "halamanAwal": 160,
+      "halamanAkhir": 160
+    },
+    {
+      "bab": "IJAZAH KUBRO",
+      "judul": "Ijazah Kubro",
+      "halamanAwal": 162,
+      "halamanAkhir": 169
+    },
+    {
+      "bab": "IJAZAH KUBRO",
+      "judul": "Ijazah Wirid",
+      "halamanAwal": 170,
+      "halamanAkhir": 172
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "Khususiyah Nabi",
+      "halamanAwal": 174,
+      "halamanAkhir": 175
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "An Nujum Fis Sama’",
+      "halamanAwal": 175,
+      "halamanAkhir": 176
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "Qosidah Habib Abdullah Al Haddad",
+      "halamanAwal": 177,
+      "halamanAkhir": 179
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "Roudlatul Muta’allimin",
+      "halamanAwal": 180,
+      "halamanAkhir": 183
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "Syaikhona",
+      "halamanAwal": 184,
+      "halamanAkhir": 185
+    },
+    {
+      "bab": "MANDHUMAH",
+      "judul": "Ya Ummah",
+      "halamanAwal": 185,
+      "halamanAkhir": 186
+    },
+    {
+      "bab": "KALIMAH HIKMAH",
+      "judul": "Kalimah Hikmah Dari KH. Ma’ruf Irsyad",
+      "halamanAwal": 188,
+      "halamanAkhir": 192
+    },
+    {
+      "bab": "KALIMAH HIKMAH",
+      "judul": "Pesan- Pesan KH. Ma’ruf Irsyad",
+      "halamanAwal": 192,
+      "halamanAkhir": 195
+    }
+  ],
+  "bab": [
+    {
+      "bab": "DO’A DAN DZIKIR",
+      "gambar": "images/DO’A DAN DZIKIR.jpg"
+    },
+    {
+      "bab": "ZIAROH QUBUR DAN TAHLIL",
+      "gambar": "images/ZIAROH QUBUR DAN TAHLIL.jpg"
+    },
+    {
+      "bab": "SHOLAT DAN WIRID",
+      "gambar": "images/SHOLAT DAN WIRID.jpg"
+    },
+    {
+      "bab": "NIKAH DAN AQIQOH",
+      "gambar": "images/NIKAH DAN AQIQOH.jpg"
+    },
+    {
+      "bab": "SHOLAWAT",
+      "gambar": "images/SHOLAWAT.jpg"
+    },
+    {
+      "bab": "IJAZAH KUBRO",
+      "gambar": "images/IJAZAH KUBRO.jpg"
+    },
+    {
+      "bab": "MANDHUMAH",
+      "gambar": "images/MANDHUMAH.jpg"
+    },
+    {
+      "bab": "KALIMAH HIKMAH",
+      "gambar": "images/KALIMAH HIKMAH.jpg"
+    }
+  ]
+}
