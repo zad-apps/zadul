@@ -265,6 +265,7 @@
     const container = document.getElementById('overlay-images');
     container.innerHTML = '<div class="loading">Memuat halaman...</div>';
     overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden';
     overlay.scrollTop = 0;
 
     container.innerHTML = '';
@@ -276,6 +277,7 @@
   }
 
   function closeOverlay() {
+    document.body.style.overflow = '';
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('overlay-images').innerHTML = '';
   }
