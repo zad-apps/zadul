@@ -1,4 +1,4 @@
-const CACHE_NAME = 'zadul-v5';
+const CACHE_NAME = 'zadul-v6';
 const ASSETS = [
   './',
   './index.html',
