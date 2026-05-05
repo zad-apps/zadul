@@ -21,7 +21,7 @@
     #search-wrapper { position: relative; width: 100%; }
     #search-bar input {
       width: 100%; padding: 14px 48px 14px 20px;
-      border-radius: 20px; border: 3px solid #3CB463;
+      border-radius: 20px; border: 3px solid #11343d;
       font-family: 'Sora', sans-serif;
       font-size: 15px; outline: none;
       background: #ffffff; color: #11343d;
@@ -118,8 +118,11 @@
 <body>
 
 <div id="search-bar">
+  <div style="text-align:center; padding-bottom:10px;">
+  <img src="images/logo.png" style="height:60px; width:auto;">
+</div>
   <div id="search-wrapper">
-    <input type="text" id="search-input" placeholder="Cari judul..." oninput="onSearch()">
+    <input type="text" id="search-input" placeholder="⌕ | Ketuk untuk mencari..." oninput="onSearch()">
     <button id="clear-btn" onclick="clearSearch()">✕</button>
   </div>
 </div>
