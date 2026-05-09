@@ -15,7 +15,7 @@
 
     #search-bar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: #ffffff; padding: 14px 16px;
+      background: #11343d; padding: 14px 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     #search-wrapper { position: relative; width: 100%; }
@@ -113,7 +113,7 @@
 
 <div id="search-bar">
   <div style="text-align:center; padding-bottom:10px;">
-  <img src="images/logo.png" style="width:70vw; height:auto;">
+  <img src="images/logop.png" style="width:70vw; height:auto;">
 </div>
   <div id="search-wrapper">
     <input type="text" id="search-input" placeholder="⌕ | Ketuk untuk mencari..." oninput="onSearch()">
@@ -281,6 +281,11 @@
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('overlay-images').innerHTML = '';
   }
+  document.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+});
 </script>
 </body>
 </html>
